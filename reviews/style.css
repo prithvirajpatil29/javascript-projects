@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F2F7FE;
+}
+.title{
+    text-align: center;
+    margin-top: 35px;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}   
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 2;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 3px 3px rgb(239, 234, 234),-1px -1px 3px 3px rgb(239, 234, 234);
+    border-radius: 5px;
+}
+.container>.review{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container>.review>.img-container{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container>.review>.img-container>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.container>.review>#author{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+.container>.review>#job{
+    color: skyblue;
+    text-transform: uppercase;
+}
+.container>.review>.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+.container>.review>.button-container>button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: skyblue;
+}
+.container>.review>.random-btn{
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    color: white;
+    background-color: skyblue;
+}
+button:hover{
+    cursor: pointer;
+}
+@media(max-width:400px){
+    .container{
+        width: 250px;
+    }
+}
