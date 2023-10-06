@@ -1,0 +1,9 @@
+button>.fa-square-plus{
+    transition: 0.3s;
+}
+button>.fa-square-plus:hover{
+    transform: rotate(90deg);
+}
+p{
+    display: none;
+}
