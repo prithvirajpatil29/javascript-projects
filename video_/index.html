@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+        }
+        video{
+            position: absolute;
+            opacity: 0.6;
+            height: 100vh;
+            bottom: 0;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+    <h1>Video Play and Pause</h1>
+        </center>
+    <video id="myVideo" loop autoplay src="https://player.vimeo.com/external/370467553.sd.mp4?s=96de8b923370fb7fa8616d4e0b74eaf3fac9e576&profile_id=164&oauth2_token_id=57447761"></video>
+    <button id="pause">Pause</button>    
+</div>
+<script>
+    let pause = document.getElementById('pause');
+    let video = document.getElementById('myVideo');
+    pause.addEventListener('click',function(){
+        video.pause();
+    });
+</script>
+</body>
+</html>
